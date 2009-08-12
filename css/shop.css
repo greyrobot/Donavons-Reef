@@ -1,0 +1,440 @@
+@charset "utf-8";
+
+/* overide style defined in main.css */
+#main_div .content_div {  height:auto; padding-top:1em; }	
+#main_div .top_white-border { cursor:default; }
+
+#shop_header { position:relative }
+#shop_content div.buy_now_notice { float:right; width:12em; text-align:right; color:#333; padding:.5em 2.2em 0 0; line-height:1 }
+#shop_content .content_div { width:62.75em; padding:2em 0 2em .5em; overflow:hidden }
+#shop_content div#shop_header.top_white-border, div#related_items .top_white-border {
+	background:url(/images/cart_top-border.png) top left no-repeat;
+	width:61.5em;
+}
+#main_div #shop_content .btm_white-border { width:688px; height:10px; background:url(/images/cart_border-btm.png) top left no-repeat; }
+
+/* style for elements only on shop page */
+div#type_container { width:auto; height:auto; text-align:center; }
+	ul#type_list { list-style:none; padding-top:.5em; }
+	ul#type_list li, ul#type_list li h3 { display:inline; }
+		ul#type_list li a { 
+			display:inline-block;
+			width:90px;
+			height:30px;
+			background:url(/images/type-btn-bg.png) no-repeat;
+			font:normal 16px "Century Gothic", sans-serif;
+			font-variant:small-caps;
+		}
+		ul#type_list li#all_link a { width:40px; background:url(/images/type_all-btn-bg.png) no-repeat; }
+		ul#type_list li a:link, ul#type_list li a:visited { color:#333; text-decoration:none; }
+		ul#type_list li a:hover, ul#type_list li a:active { color:#fff; text-decoration:none; }
+		ul#type_list li a.active:link, ul#type_list li a.active:visited { color:#fff; text-decoration:none; }
+		
+	#view_cart_div { width:5em; padding:.35em 0 0 .45em; float:left }	
+		
+div.product_listing, #product_listing_summary { 
+	width:11.7em;
+	height:14em;
+	float:left;
+	font:normal 18px "Century Gothic", sans-serif;
+	text-align:center;
+	margin:0 .3em 1em .3em;
+	background-color:#ebebeb;
+	-moz-border-radius: 15px;
+	-webkit-border-bottom: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-top: 15px;
+	border:1px solid #dadada;
+}
+	div.product_listing h4 { 
+		margin:.5em  0.5em 0 1.8em;
+		height:2.5em;
+		font:bold 14px "Century Gothic", sans-serif; 
+	}
+		
+	div.product_listing div.details { margin:.5em 0 0 .5em; text-align:left; font-size:12px; font-weight:bold; }
+	
+	div.product_listing.single_listing h4 { margin-left:8.8em; height:auto; font-size:1em; text-decoration:underline; }
+	div.product_listing.single_listing { width:90%; height:auto; margin:0 0 1em 1.5em }
+	div.product_listing.single_listing img { float:left; margin:-1em 2.5em 1.5em 1em; }
+	div.product_listing.single_listing .description_div { text-indent:2em }
+	
+	h4.product_title a:link, h4.product_title a:visited { text-decoration:none; font:bold .9em "Century Gothic", sans-serif; color: #258DFF } 
+	h4.product_title a:hover, h4.product_title a:active { text-decoration:underline; color:#FF9900 }   
+	div.description_div { 
+		float:left; 
+		padding:0; 
+		font-size:.7em; 
+		width:26em; 
+		background-color:#FFF; 
+		text-align:left; 
+		margin:1em 0 1em 0;
+		padding:.5em
+	}
+	
+.product_image { border:0.2em solid #2E70A0; margin:0 auto; }
+.product_image:hover { border:0.2em solid #333; }
+
+ul.product_extra_info_list { list-style:none; padding-left:8px }
+	ul.product_extra_info_list li { display:inline }
+
+span.availability { color:#FF3333; font-size:.8em; }
+	span.availability em { color:#28CC8E; font-weight:bold; } /* product available */
+	span.availability i.av_i { color:#FF9911; display:inline-block; width:3.8em; margin:0 -.1em -.5em .2em } /* product almost gone */
+
+div.buy_link {
+	float:left;
+	margin:0;
+	color:#FFF;
+	position:absolute;
+	top:3.7em;
+	left:3.2em;
+	z-index:110;
+	background-color:#258DAF;
+}
+	div.buy_link input { 
+		background-color:#258DAF; 
+		border:none; 
+		color:#FFF;
+		margin-left:.45em;
+		font:bold 14px "Century Gothic", sans-serif;
+		cursor:pointer;
+	}
+
+div.buy_link.bottom { position:static; float:left; margin:.5em -3em .5em 2.2em; }
+
+div.item_check { 
+	width:.8em; 
+	height:.8em; 
+	margin:.1em -.25em 0 .25em;
+	float:left;
+	padding:0;
+	position:relative;
+}
+	
+a.price_link { 
+	padding:0.15em; 
+	background-color:#258DAF;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+}
+	a.price_link:link, a.price_link:visited { color:#FFFF66; text-decoration:none; font:bold 10px "Century Gothic", sans-serif }
+	a.price_link:hover, a.price_link:active { color:#258DAF; background-color:#FFFF66; text-decoration:none; }
+	a.disabled:hover { background-color:#258DAF; color:#FFFF66; cursor:default; }
+	
+div.paginate { 
+	width:50%;
+	height:auto;
+	margin:-1% 0 0 24%;
+	color:#333;
+	text-align:center;
+	font:bold 18px "Myriad Pro", sans-serif;
+}
+div.pagination { top:.6em; left:5%; position:relative }
+div.pagination b, div.pagination a {
+	background:url(/images/paginate-btn-bg.png) no-repeat;
+	font:normal 16px Arial, Helvetica, sans-serif;
+	display:inline-block;
+	padding:2px 0 0 0;
+	font-weight:bold;
+	width:24px;
+	height:24px; 
+}
+.pagination b { color:#333 }
+.pagination a { color:#CCC }
+.pagination a:hover { background:url(/images/paginate-btn-bg-over.png) no-repeat }
+.pagination a:link, .pagination a:visited { color:#333; text-decoration:none; }
+.pagination a:hover, .pagination a:active { color:#369DFF; text-decoration:none; }
+
+input.quantity_changer { 
+	width:1.3em; 
+	color:#258DFF; 
+	font:bold 12px "Century Gothic", sans-serif; 
+	padding:0 0 0 .3em;
+	position:relative;
+	top:2px
+}
+
+/**************************
+	 Cart view styles 
+**************************/
+
+h4#cart_head { 
+	font-size:1.4em; 
+	color:#FFF;
+	font-weight:bold;
+	text-align:center;
+	line-height:1.3;
+	margin:-2em -2em 0 0;
+}
+
+#cart_content #cart_wrapper { height:auto; padding-bottom:2em; width:63.2em; }
+#cart_content div#cart_header.top_white-border {
+	background:url(/images/cart_top-border.png) top left no-repeat;
+	width:63em;
+}
+#main_div #cart_content #shop_btm_border, div#related_items #featured_btm_border { width:49em; background:url(/images/cart_border-btm.png) top left no-repeat; }
+
+#cart_content div#cart_header #cart_heading { color:#333; width:68%; float:right; margin:-3.7em 0 0 0 }
+#cart_content div#cart_header #cart_heading h2 { font-size:2em; margin-top:.3em }
+#cart_content div#cart_header.checkout #cart_heading { margin:0 }
+
+#shopping_cart {
+	margin:2.6em 1.5em 0 1.5em;
+	text-align:center;
+	padding:1em;
+	border:3px solid #258DAF;
+	font:normal 14px "Century Gothic", sans-serif;
+	-moz-border-radius-topleft: 12px;
+	-moz-border-radius-bottomright: 12px;
+	-webkit-border-top-left-radius: 12px;
+	-webkit-border-bottom-right-radius: 12px;
+}
+	#shopping_cart ul { list-style:none; font-size:1em; font-weight:bold; }
+	#shopping_cart ul li { display:inline; margin:.5em; }
+	#cart_link { margin:1.3em auto 0 auto; text-align:center; }
+		#cart_link a { padding:.35em; border:2px solid #258DAF; }
+		#cart_link a:link, #cart_link a:visited { 
+			background-color:#258DAF;
+			text-decoration:none;
+			color:#333;
+			-moz-border-radius-topleft: 6px;
+			-moz-border-radius-bottomright: 6px;
+			-webkit-border-top-left-radius: 6px;
+			-webkit-border-bottom-right-radius: 6px;
+		}
+		#cart_link a:hover, #cart_link a:active { 
+			color:#258DAF; 
+			background-color:#333; 
+			text-decoration:none;
+			-moz-border-radius-topleft: 6px;
+			-moz-border-radius-bottomright: 6px;
+			-webkit-border-top-left-radius: 6px;
+			-webkit-border-bottom-right-radius: 6px; 
+		}
+		
+#shop_content { height:auto; }
+#cart_container {
+	width:90%;
+	height:auto;
+	padding:.6em .6em 2em .6em;
+	margin:0 auto;
+	background-color:#258DAF;
+	color:#333;
+	font:bold 18px "Century Gothic", sans-serif;  
+	-moz-border-radius: 15px;
+	-webkit-border--radius: 15px;
+	border:1px solid #268DAF;
+}
+	#items_container { margin:0; padding-top:.5em; }
+	#cart_container #items_container div.product_listing { width:48%; height:9em; font-size:.8em; margin:0 .35em .7em .35em }
+		.product_listing .cart_pic { border:2px solid #258DAF; margin:0 0 0 .8em; float:left; }
+		.product_listing div.quantity_div { margin:1em 0 0 1em; }
+		.product_listing div.quantity_div code { color:#333; font-weight:bold; }
+		
+		div.product_listing h4.product_title_cart { height:auto; margin-bottom:7px }
+		
+		#c_div { margin:0; padding:0 0 0 .85em; overflow:hidden }
+			#c_div div { width:2em; margin:0 0 0 .3em; float:left }
+			#c_div #check_all_div { margin:0; padding:0 0 0 .1em; width:1.3em }
+		
+		#cart_info { 
+			margin:.4em .3em 0 .3em; 
+			padding:.6em; 
+			background-color:#352239;
+			color:#FFF;
+			-moz-border-radius: 10px;
+			-webkit-border--radius: 10px;
+			overflow:hidden;
+		}
+			#left_cart_div, #mid_cart_div { width:40%; float:left; margin:0; }
+			#mid_cart_div { width:17%; }
+			
+			#left_cart_div div, #mid_cart_div div { margin:.5em; }
+			.quantity_div { float:left; }
+			
+			#right_cart_div { 
+				background-color:#ebebeb;
+				padding:.5em;
+				width:30%;
+				float:left;
+				margin:3.3em 0 0 3.5em;
+				font:normal 12px Arial, Helvetica, sans-serif;
+				color:#333;
+				font-style:italic;
+				-moz-border-radius: 5px;
+				-webkit-border--radius: 5px;
+			}
+				#right_cart_div ul { list-style:disc; list-style-position:inside; }
+				#right_cart_div ul li { margin-bottom:.5em; }
+			
+		#check_out-btn { margin-top:1.5em }
+		#ppcheckout { margin:0 0 -18px 0 }		
+		
+/**********************
+	checkout page 
+**********************/		
+		#cart_container #items_container #product_listing_summary { 
+			width:94%;
+			height:auto; 
+			font-size:.8em;
+			text-align:left;
+			padding:.3em .75em .3em .75em;
+			margin:0 0 .6em .45em;
+			background-color:#ebebeb;
+			-moz-border-radius: 15px;
+			-webkit-border-bottom: 15px;
+			-moz-border-radius: 15px;
+			-webkit-border-top: 15px;
+			border:1px solid #dadada;
+		}
+			#cart_container #items_container div#product_listing_summary ol { margin:.5em 0 .5em 1.5em; list-style:none }
+			#cart_container #items_container div#product_listing_summary ol li { overflow:hidden }
+			#cart_container #items_container div#product_listing_summary ol li div.c_li { width:31%; float:left; margin:0 0 .5em 0; text-align:center } 
+			#cart_container #items_container div#product_listing_summary ol li div.hdr { font-weight:bold; font-size:1.3em }
+			#cart_container #items_container div#product_listing_summary ol li div.amt { text-align:center; font-size:1.5em }
+		
+		#cart_info dl { overflow:hidden; margin:0 auto; width:98%; font-size:1.1em }
+		#cart_info dl dt, #cart_info dl dd { padding:.3em }
+			#cart_info dl dt { float:left; padding:.2em; width:28%; letter-spacing:5px }
+			#cart_info dl dd { font-weight:normal }
+			
+	#items, div.featured_items { 
+		width:27em;
+		height:7em;
+		text-align:center;
+		margin:2em auto 0 auto;
+	}
+	#items #gallery4x4, div.featured_items #gallery4x4 { width:100%; height:100%; } 
+	#items #gallery4x4 a img, div.featured_items #gallery4x4 a img { float:left; margin:.5em; }
+	
+	input.update { 
+		width:1.3em; 
+		height:1.3em;
+		padding:0;
+		color:#258DAF;
+		text-align:center;
+		border:1px solid #258DAF;
+		font:bold 24px "Century Gothic", sans-serif;
+	}
+	
+	#order_info1 { width:100%; }
+	
+	#cart_btn_container { width:auto; height:auto; text-align:left; }
+		ul#btn_list { list-style:none; padding-top:0.8em; margin-left:8em; }
+		ul#btn_list img { margin-top:-.75em; cursor:pointer; }
+		ul#btn_list li, ul#btn_list li h5 { display:inline; position:relative; }
+			ul#btn_list li a { 
+				padding:0.3em; 
+				background-color:#258DAF; 
+				width:3em; 
+				-moz-border-radius-topleft: 5px;
+				-moz-border-radius-bottomright: 5px;
+				-webkit-border-top-left-radius: 5px;
+				-webkit-border-bottom-right-radius: 5px;
+			}
+			ul#btn_list li a:link, ul#btn_list li a:visited { color:#333; text-decoration:none; }
+			ul#btn_list li a:hover, ul#btn_list li a:active { color:#333; background-color:#28CC8E; text-decoration:none; }
+	
+	select#shipping {
+		height:1.5em;
+		padding:0;
+		color:#258DAF;
+		border:1px solid #258DAF;
+		font:bold 1em "Century Gothic", sans-serif; 
+	}
+	
+	#total { 
+		width:5em;
+		text-align:center;
+		padding:.2em;
+		color:#333;
+		background-color:#28CC8E; 
+		-moz-border-radius-topleft: 5px;
+		-moz-border-radius-bottomright: 5px;
+		-webkit-border-top-left-radius: 5px;
+		-webkit-border-bottom-right-radius: 5px;
+	}
+	
+	.quantity_div label { font:normal 1.2em "Century Gothic", sans-serif; color:#FF6600; } 
+	
+#loading { width:15px; height:15px; position:absolute; top:-5px; left:10px; display:none; }
+
+div.left_div, div.right_div { width:45%; float:left; text-align:center; margin:1em 0 1em .6em }
+div.left_div a.btn_link:link, div.left_div a.btn_link:visited { text-decoration:none; padding:.4em; color:#FF6600; border:2px solid #1A63AC; background-color:#A4D3F0 }
+div.left_div a.btn_link:hover, div.left_div a.btn_link:active { padding:.4em; background-color:#94D3a0 }
+
+a#login:link, a#login:visited { font-size:.7em; color:#0099FF; padding:0 0 0 2.5em }
+a#login:hover, a#login:active { color:#94D3a0 }
+
+h3.ship_hdr { margin:1em 0 1em -.95em }
+div.form_div .left_form_div { width:52%; float:left }
+div.form_div .right_form_div { width:43%; float:left; padding:.7em 0 0 0 }
+	div.error { font:bold .8em "Century Gothic", sans-serif; color:#F00; padding:0 0 .2em 0 }
+
+div.form_div label { font-weight:normal; display:inline-block; padding:.6em .2em 0 .3em }
+div.form_div div { margin:0 }
+div.form_div div.notice { font-weight:normal; padding:.5em 0 0 0; font-size:.7em; color:#CCC }
+div.itl { font-style:italic }
+
+div#adr_info { position:relative; width:23em }
+
+a.tooltip:link, a.tooltip:visited { color:#258DAF; text-decoration:none; font-weight:bold; }
+a.tooltip:hover, a.tooltip:active { color:#FFF; text-decoration:underline; font-weight:bold; }
+
+#comment { width:500px; height:100px; margin-bottom:30px }
+
+#checkout_links { margin:0; overflow:hidden }
+
+div#main_div.success_page #cart_wrapper { height:auto; padding:0 }
+div#main_div.success_page #cart_wrapper #cart_info { font-weight:normal; font-size:.8em; padding:0 0 1em 1em }
+div#main_div.success_page #cart_wrapper #cart_info h3 { font-size:1.9em; text-align:center; padding:.5em .5em .5em 0; color:#33dd88 }
+div#main_div.success_page #cart_wrapper #cart_info ul { list-style:none; font-weight:bold }
+div#main_div.success_page #cart_wrapper #cart_info ul li ul { list-style:disc; list-style-position:inside; padding:0 0 .5em 1em; font-weight:normal }
+div#main_div.success_page #cart_wrapper #cart_info code { font:normal 1em monospace; color:#333; display:inline-block; margin:0 0 1em 1em; background-color:#dfdfdf; padding:.5em }
+div#main_div.success_page #cart_wrapper #cart_info span.bold { font-weight:bold }
+div#main_div.success_page #cart_wrapper #cart_info hr { margin:1em 1em 2em 1em }
+div#main_div.success_page #cart_wrapper #cart_info div.bottom_div { margin:0; padding:0; text-align:center }
+div#main_div.success_page #cart_wrapper #cart_info div.bottom_div p { margin:0 0 0 -1em; padding:0 }
+div#main_div.success_page #cart_wrapper #cart_info div.bottom_div p i { font-size:1.2em; color:#33ddff }
+div#main_div.success_page #cart_wrapper #cart_info div.bottom_div p.bottom_notice { font-size:2em; padding:.5em }
+
+div#page_btm.wide { width:50em }
+div#box1.final_black_box { color:#fff; font:normal 1em "Century Gothic", sans-serif; margin:0; float:right }
+div#box1.final_black_box p { }
+
+div#related_items { width:60.9em; margin-top:-.5em; }
+div#related_items .content_div { width:63.2em; text-align:center; overflow:hidden; }
+div#related_items h4 { color:#333; text-align:center; font:normal 1.5em "Century Gothic", sans-serif; padding:.4em 0 0 0; }
+div#related_items .content_div ul { list-style:none; width:96%; margin:0 auto; }
+div#related_items .content_div ul li.item { float:left; width:14.1em; padding:0em; margin:.5em .5em 0 .5em; }
+div#related_items .content_div ul .item h4 { color:#333; height:3em; text-align:center; font:normal .9em "Century Gothic", sans-serif }
+div#related_items .content_div ul li.item a img { border:3px solid #258DAF;  }
+div#related_items .content_div ul li.item a img:hover { border:3px solid #333; }
+
+input.blue_btn { 
+	padding:0 .3em 0 .3em; 
+	background-color:#258DAF; 
+	cursor:pointer;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	font:normal 1em "Century Gothic", sans-serif
+}
+
+#cart_empty {
+	font:bold 18px "Berlin Sans FB", sans-serif;
+	color:#258DAF;
+	text-align:center;
+	width:50%;
+	margin:1.3em auto 0 auto;
+	padding:.5em;
+	background-color:#aceeeb;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-bottomright: 8px;
+	-webkit-border-top-left-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+}

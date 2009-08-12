@@ -1,0 +1,216 @@
+@charset "utf-8";
+
+#admin_content div#admin_wrapper { height:55em; width:63.09em; position:relative; }
+#admin_content div#admin_header.top_white-border {
+	background:url(/images/cart_top-border.png) top left no-repeat;
+	cursor:default;
+	width:60.9em;
+}
+#main_div #admin_content #shop_btm_border { width:60.9em; background:url(/images/cart_border-btm.png) top left no-repeat; }
+
+div#admin_wrapper p { padding:0.85em; }
+
+ul#admin_nav { list-style:none; width:43em; margin:0 auto; padding-top:.75em; }
+ul#admin_nav li { display:inline; margin:0 .2em 0 .2em; }
+ul#admin_nav li a { 
+	padding:.3em .4em .3em .4em; 
+	background-color:#258DAF; 
+	width:2.5em;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+}
+	ul#admin_nav li a:link, ul#admin_nav li a:visited { color:#333; text-decoration:none; font-size:1.1em; font-weight:bold }
+	ul#admin_nav li a:hover, ul#admin_nav li a:active { color:#333; background-color:#28CC8E; text-decoration:none; }
+	ul#admin_nav li a.selected_page { background-color:#28CC8E; }
+
+#admin_page_container {
+	width:94%;
+	height:98%;
+	background-color:#ebebeb;
+	-moz-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border:1px solid #dadada;
+}
+
+	.item_loading { display:none; position:relative }
+	
+div.control_page { margin:.7em; overflow:auto; background-color:#dadada; padding:1em; border:1px solid #c9c9c9; height:90%; }
+div.control_page div { margin:0 }
+div.control_page p { font-size:1.5em; margin:0 }
+div.control_page fieldset legend { margin:0 }
+div.control_page .section_hdr { font:bold 2em "Century Gothic", sans-serif; text-align:center; margin:0 0 1em 0 }
+div.control_page input { margin-right:.5em; }
+
+div.control_page div.radio_field { margin:.5em; width:12em; float:left; }
+div.control_page div.submit_field { margin:.5em; width:10em; float:right; }
+
+span.loader, span.success { display:none; }
+
+div.p_list_hdr { height:1.3em; font-weight:bold; font-size:1.3em }
+span.msg { font:bold 1.1em Verdana, Arial, Helvetica, sans-serif; color:#F30 } 
+
+#products_list_container { width:16.5em; height:30em; background-color:#FFF; border:1px solid #c9c9c9; overflow:auto; margin:.5em 1em 1em 0; float:left; }
+#products_list_container ul { list-style:inside; list-style:none; margin:0 }
+	#products_list_container ul li p { 
+		background-color:#258DAF; 
+		color:#aaffaa; 
+		text-align:center; 
+		font-weight:bold; 
+		font-size:1.2em; 
+		padding:0 0 .5em 0
+	}
+		#products_list_container ul li ol { list-style:none; margin:-.65em 0 1em 0; }
+		#products_list_container ul li ol li { 
+			background-color:#FFF; 
+			font-size:.8em; 
+			padding:.3em .25em .3em .25em; 
+			border-bottom:1px solid #dadada; 
+		}
+		#products_list_container ul li ol li:hover { background-color:#258DAF; }
+		
+		#products_list_container ul li ol li.in_stock { background-color:#9BD5E8; font-weight:bold }
+		#products_list_container ul li ol li.in_stock:hover { background-color:#aaffaa }
+		#products_list_container ul li ol li.low { background-color:#FCD68F; font-weight:bold }
+		#products_list_container ul li ol li.low:hover { background-color:#FFCC66 }
+		#products_list_container ul li ol li.empty { background-color:#FC9696; font-weight:bold }
+		#products_list_container ul li ol li.empty:hover { background-color:#CC0066 }
+		
+			#products_list_container ul li ol li a:link, #products_list_container ul li ol li a:visited { text-decoration:none; color:#333; }
+			#products_list_container ul li ol li a:hover, #products_list_container ul li ol li a:active { text-decoration:underline; color:#d77; }
+			
+#edit_form_container { float:left; width:35em }
+#edit_form_container p { text-align:left; }
+#edit_form_container .edit_file_input_div { width:16em; float:left; }
+#edit_form_container div img { border:2px solid #333; }
+
+div.control_page .top_form_div { overflow:hidden }
+div.control_page .left_form_div, div.control_page .right_form_div { width:48%; float:left }
+div.control_page p .save-btn { margin:1em -1em 0 0; float:right }
+
+div.top_form_div p input { font:normal .8em "Century Gothic", sans-serif }
+
+#edit_form_container div.small_opt { width:30%; float:left }
+
+#orders_control table tr { background-color:#45A9DE; cursor:pointer; }
+#orders_control table tr td .checkmark { float:left; margin:0 -24px 0 10px }
+#orders_control table .even { background-color:#91ceee }
+#orders_control table .odd { background-color:#45A9DE }
+#orders_control table tr.row.clicked, #orders_control table tr.row.hovered { background-color:#ffCCFF }
+
+
+
+#orders_control table tr th { 
+	border-bottom:1px solid #333; 
+	background-color:#666; 
+	text-align:center; 
+	color:#CCC; 
+	cursor:default;
+	font-weight:bold;
+	font-size:1.2em; 
+	padding:.2em 
+}
+#orders_control table tr td { border-bottom:1px solid #888; text-align:center }
+#orders_control div.items { font-size:.7em; padding:.2em }
+#orders_control div.items p.note { font-size:1em }
+#orders_control div.total_orders { 
+     font-size:1.3em; 
+     background-color:#333; 
+     color:#fff;
+     padding:.3em .3em .2em .5em;
+     -moz-border-radius-topleft: 5px;
+     -moz-border-radius-topright: 5px;
+     -webkit-border-top-left-radius: 5px;
+     -webkit-border-top-right-radius: 5px;
+}
+
+	#orders_control div#paginater { text-align:center; font:bold 1.5em "Myriad Pro", sans-serif }
+	
+	#table_scroll { overflow:auto }
+	
+#order_details { overflow:hidden; margin:1em 0 0 0 }
+#order_details #left_div, #order_details #middle_div, #order_details #right_div { 
+	float:left; 
+	width:32%; 
+	margin:.3em;
+	padding:0 0 -1em 0;
+	background-color:#666;
+	-moz-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border:2px solid #444;
+	color:#fff;
+	display:none;
+	font-size:.8em
+}  
+#order_details .o_section h4 { 
+	background:url(/images/top-gradient-black.png) right repeat-y; 
+	padding:.3em; 
+	text-align:center;
+    letter-spacing:4px;
+	font:bold 1.3em "Myriad Pro", sans-serif;
+	margin:0;
+	-moz-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-webkit-border-radius: 7px;
+}
+#order_details .o_section p{ padding-bottom:0 }
+#order_details em { font-weight:bold }
+#order_details #left_div { height:21em }
+#order_details #left_div div.scroll { height:19em; overflow:auto }
+	#order_details #left_div p { font-size:.8em }
+	#order_details #left_div p#note { font-size:1em  }
+#order_details #middle_div { width:30%; padding-bottom:20px }
+#order_details #right_div { width:32% }
+#order_details #right_div a:link, #order_details #right_div  a:visited { color:#0CF }
+        #order_details #right_div code { font-size:.8em }
+	#order_details .o_section .scroll ol { list-style-position:inside; padding:.8em 0 0 .3em}
+    	#order_details .o_section .scroll ol li { padding:0 0 .3em 0 }
+	 
+#loader { text-align:center; display:none }
+
+#site_links_control div.banner_div { width:93%; padding:1em; margin:.6em }
+	#site_links_control div.banner_div div { margin:.4em; font-size:1.1em }
+	#site_links_control div.banner_div div.b_title { font-size:1.8em }
+	
+	#add_div { overflow:hidden; border:2px solid #888; padding:0 1em 1.5em 1em; display:none }
+		#add_div legend { font-size:1.em; padding:.5em }
+		#add_div .left_div, #add_div .right_div { float:left; width:40% }
+		#add_div .right_div { float:right; position:relative }
+			#add_div .right_div #v_div { position:absolute; top:11.7em }
+		#add_div .right_div p input { margin:2.3em 0 0 4.3em }
+		#add_div p { clear:both; font-size:1.3em }
+		#add_div input, div.banner_div input { font:normal 1.2em "Century Gothic", sans-serif; color:#444 }
+		#site_links_control div.banner_div input.title_input { font:normal .7em "Century Gothic", sans-serif; margin:0 0 0 -.25em }
+		#site_links_control div.banner_div input.cancel_btn { background-color:#F93969 }
+		 
+	#site_links_control div.banner_div div.options_div { width:40%; float:right; text-align:right }
+		#site_links_control div.banner_div ul.options_list { list-style:none }
+		#site_links_control div.banner_div ul.options_list li { display:inline; padding:.2em }
+				#site_links_control div.submit_edit { text-align:right; display:none }
+				#site_links_control div.submit_edit input { background-color:#28CC8E }
+				
+			#site_links_control div.options input#edit-btn:hover { background-color:#28CC8E }
+			#site_links_control div.options input#delete-btn:hover { background-color:#F93969 }
+			
+	#site_links_control #msg { 
+		font-weight:bold; 
+		font-size:1.3em; 
+		text-align:center; 
+		margin:1em; 
+		border:2px solid #770000;
+		color:#FFF; 
+		padding:.4em; 
+		background-color:#990000 
+	}
+	
+#photo_upload { display:none; height:90%; }
+
+#edit_form_container div.e_image { float:right; width:119px; height:100px; }
+
+span.err { color:#990000 }

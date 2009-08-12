@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* IE effin sucks */
+
+#wrapper { overflow:hidden; width:100% }
+#flash_container { left:1.45em; top:.5em }
+
+#header h2 { left:2.5em }
+
+ul#nav_list li img { margin-bottom:1.69em; }
+
+ul#type_list li h3 a { font-size:16px }
+
+#main_div div.btm_white-border { margin-bottom:1.2em }
+
+#content1 { margin:0 0 .8em 0 }
+
+div.product_listing h4 { margin:.5em  0.5em 0 0; padding-left:1em }
+
+#donavons_banner object { margin:-15px 0 15px -45px }
+
+div#shop_content div.content_div { width:63.1em }
+.details { width:350px }
+
+div#shop_header.top_white_border div.pagination { }
+div#shop_header.top_white_border { text-align:center }
+
+div#cart_info { margin:.4em .3em 0 .3em }
+
+div.product_listing.single_listing { padding-bottom:1em }
+
+#cart_container #items_container div#product_listing_summary { width:94.4%; margin:0 0 1.2em .34em }
+
+.pagination b { font-weight:lighter; margin-bottom:-4px }
+
+#sign_up_form_div {
+	width:auto;
+	margin-left:1.88em;
+	position:relative;
+}				 
+	.field input {
+		border:none;
+		width:8.13em;
+		height:0.88em;
+		margin-top:0.31em;
+		font-family:"Berlin Sans FB", sans-serif;
+		font-size:1em;
+		color:#333333;
+	}
+	.center input { margin-left:-7.19em; }
+#main_div .btm_white-border { margin-bottom:.8em; }
+#main_div.page .page_content .content_div { width:57.55em }
+#main_div #extra_content { margin-top:0; }	
+#main_div #extra_content p { text-align:left; }
+#main_div #extra_content .top_white-border p { padding:0.1em 0 0 0.38em; }
+
+#btn_list ul li #loading { margin-top:1em }
+
+div#admin_content div#admin_wrapper { width:63.4em }
+
+div#admin_content div#admin_wrapper #products_list_container ul li ol li a { margin-left:-1.5em }
+
+div.featured_items div#gallery4x4, div#items div#gallery4x4 { min-width:28em }
+
+#shop_content { margin-bottom:0; position:relative; }
+#cart_content div#cart_wrapper { width:63.5em }
+div#related_items div.content_div { width:63.5em }
+.IEclear { clear:both; display:block; height:3em; }
+
+input.quantity_changer {	top:3px }
+
+/* WYSIWYG styles */
+
+div.wysiwyg { border: 1px solid #cccccc; padding: 5px; background-color: #ffffff; }
+div.wysiwyg * { margin: 0; padding: 0; }
+
+div.wysiwyg ul.panel { border-bottom: 1px solid #cccccc; float: left; width: 100%; padding: 0 0 4px 0; }
+div.wysiwyg ul.panel li { list-style-type: none; float: left; margin: 0 2px;  background: #ffffff;}
+div.wysiwyg ul.panel li.separator { height: 16px; margin: 0 4px; border-left: 1px solid #cccccc; }
+div.wysiwyg ul.panel li a { opacity: 0.6; display: block; width: 16px; height: 16px; background: url(../images/jquery.wysiwyg.gif) no-repeat -64px -80px; border: 0; cursor: pointer; padding: 1px; }
+div.wysiwyg ul.panel li a:hover, div.wysiwyg ul.panel li a.active { opacity: 0.99; }
+div.wysiwyg ul.panel li a.active { background-color: #f9f9f9; border: 1px solid #cccccc; border-left-color: #aaaaaa; border-top-color: #aaaaaa; padding: 0; }
+
+div.wysiwyg ul.panel li a.bold { background-position: 0 -16px; }
+div.wysiwyg ul.panel li a.italic { background-position: -16px -16px; }
+div.wysiwyg ul.panel li a.strikeThrough { background-position: -32px -16px; }
+div.wysiwyg ul.panel li a.underline { background-position: -48px -16px; }
+
+div.wysiwyg ul.panel li a.justifyLeft { background-position: 0 0; }
+div.wysiwyg ul.panel li a.justifyCenter { background-position: -16px 0; }
+div.wysiwyg ul.panel li a.justifyRight { background-position: -32px 0; }
+div.wysiwyg ul.panel li a.justifyFull { background-position: -48px 0; }
+
+div.wysiwyg ul.panel li a.indent { background-position: -64px 0; }
+div.wysiwyg ul.panel li a.outdent { background-position: -80px 0; }
+
+div.wysiwyg ul.panel li a.subscript { background-position: -64px -16px; }
+div.wysiwyg ul.panel li a.superscript { background-position: -80px -16px; }
+
+div.wysiwyg ul.panel li a.undo { background-position: 0 -64px; }
+div.wysiwyg ul.panel li a.redo { background-position: -16px -64px; }
+
+div.wysiwyg ul.panel li a.insertOrderedList { background-position: -32px -46px; }
+div.wysiwyg ul.panel li a.insertUnorderedList { background-position: -16px -46px; }
+div.wysiwyg ul.panel li a.insertHorizontalRule { background-position: 0 -46px; }
+
+div.wysiwyg ul.panel li a.h1 { background-position: 0 -32px; }
+div.wysiwyg ul.panel li a.h2 { background-position: -16px -32px; }
+div.wysiwyg ul.panel li a.h3 { background-position: -32px -32px; }
+div.wysiwyg ul.panel li a.h4 { background-position: -48px -32px; }
+div.wysiwyg ul.panel li a.h5 { background-position: -64px -32px; }
+div.wysiwyg ul.panel li a.h6 { background-position: -80px -32px; }
+
+div.wysiwyg ul.panel li a.cut { background-position: -32px -64px; }
+div.wysiwyg ul.panel li a.copy { background-position: -48px -64px; }
+div.wysiwyg ul.panel li a.paste { background-position: -64px -64px; }
+
+div.wysiwyg ul.panel li a.increaseFontSize { background-position: -16px -78px; }
+div.wysiwyg ul.panel li a.decreaseFontSize { background-position: -32px -78px; }
+
+div.wysiwyg ul.panel li a.createLink { background-position: -80px -46px; }
+div.wysiwyg ul.panel li a.insertImage { background-position: -80px -78px; }
+
+div.wysiwyg ul.panel li a.html { background-position: -48px -46px; }
+div.wysiwyg ul.panel li a.removeFormat { background-position: -80px -62px; }
+
+div.wysiwyg ul.panel li a.empty { background-position: -64px -80px; }
+
+div.wysiwyg iframe { border: 0; margin: 5px 0 0 0; clear: left; }

@@ -1,0 +1,361 @@
+@charset "utf-8";
+/* reset */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code,
+del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+body { 
+  line-height: 1.5; 
+}
+
+/* Tables still need 'cellspacing="0"' in the markup. */
+table { border-collapse: separate; border-spacing: 0; }
+caption, th, td { text-align: left; font-weight: normal; }
+table, td, th { vertical-align: middle; }
+
+/* Remove possible quote marks (") from <q>, <blockquote>. */
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+
+/* Remove annoying border on linked images. */
+a img { border: none; outline:none; }
+a { outline:none; }
+
+body {
+	text-align:center;
+	font:0.88em "Century Gothic", sans-serif;
+	color:#333;
+	background-color:#000;
+}
+
+
+/* Block Content */
+
+#wrapper { background:url(../images/donavonsreefbg.jpg) top center no-repeat #000 }
+
+	#header {
+		width:70em;
+		height:15em;
+		text-align:left;
+		overflow:hidden;
+		margin:0 auto;
+		padding:1em 0 1.25em 0;
+		position:relative
+	}
+		#flash_container { width:70em; margin:0 auto; padding:.3em 0 0 0; position:relative; left:1.45em; top:.4em }
+		#header h1 { position:absolute; text-indent:-9999px; } 	
+		#header h2 { 
+			position:absolute; 
+			bottom:1em; 
+			left:2em; 
+			color:#ebebeb;
+			font-variant:small-caps;
+			font:bold 1.2em "Century Gothic", sans-serif
+		 }
+	#content { width:52.5em; margin:0 auto; text-align:left }
+	
+		#nav_div { width:2.50em; margin:0.63em 0 0 0; float:left }
+			
+		#main_div { width:30.20em; float:left; text-align:left  }
+			#main_div .content_div { 
+				width:409px;
+				height:auto;
+				padding-bottom:.88em;
+				background-color:#FFF;
+				line-height:1.4;
+				position:relative;
+				font-size:.77em;
+				border-left:0.06em solid #6d96a0; 
+			}	
+			
+				.content_div div { margin:0 1.25em 0 2em; }
+				.content_div div p { margin-bottom:0.63em; }
+				.content_div p.body_text { padding:1em }				
+				.content_div ul { list-style-position:inside; margin:.2em 0 1em .2em }
+				
+			#main_div .top_white-border {
+				width:410px;
+				height:5em;
+				color:#FFF;
+				position:relative;
+				font-size:.8em;
+				z-index:1; 
+				background:url(/~donavo5/images/white_top-border.png) top left no-repeat;
+			}
+				#main_div .top_white-border span { padding:0.88em; }
+				#main_div .top_white-border .min_max-icon { 
+					width:20px; 
+					float:right; 
+					display:none;
+					margin:-0.4em 1.5em 0 0;
+				}
+				
+			#main_div .btm_white-border {
+				width:410px;
+				height:10px;
+				margin-bottom:2em;
+				position:relative;
+				background:url(/~donavo5/images/white_btm-border.png) top left no-repeat;
+			}
+			
+			#content1 { margin-bottom:-.8em; }
+			
+		#side_div { width:19.56em; float:left }
+			 .box { width:276px; height:14.51em; color:#FFF; background-color:#000 }
+				
+				#box1.home_black_box .box { text-align:center; position:relative }
+				#box1.home_black_box .box p { }
+				#box1.home_black_box .box div { margin:0 auto; text-align:center }
+				#down_arrow { position:absolute; margin:0; bottom:1em; left:32% }
+				
+				#side_div img { margin:0.63em 0 0 1.56em; }
+				 .box h2.black_box_head {
+					color:#FFF;
+					font-size:1.73em;
+					font-weight:bold;
+					text-align:center;
+					padding:1.5em 0 1em 0;
+				}
+				#side_div .box p { width:16.25em; padding:0.63em 2.50em 0 3.13em; line-height:1 }
+			 .top_round-border {
+				width:276px;
+				height:12px;
+				background:url(/~donavo5/images/black_round-border.png) top left no-repeat;
+			}
+			 .btm_round-border {
+				width:276px;
+				height:12px;
+				margin-bottom:1em;
+				background:url(/~donavo5/images/btm_black-border.png) top left no-repeat;
+			}
+			
+			#gallery4x4 {
+				width:17.44em;
+				height:12.38em;
+				margin:0 auto;
+				text-align:center;
+			}
+				#gallery4x4 span { color:#fff; display:block; font:bold 16px "Berlin Sans FB", sans-serif }
+				#gallery4x4 img { border:0.25em solid #FFF; margin:0 }
+				#gallery4x4 img:hover { border:0.25em solid #2E70A0; }
+				
+			#sign_up_form_div { width:auto; margin-left:3.13em }				 
+				.field input {
+					border:none;
+					width:8.75em;
+					height:1.13em;
+					margin-top:0.31em;
+					font-family:"Berlin Sans FB", sans-serif;
+					font-size:0.88em;
+					color:#333;
+				}
+				.center input { margin-left:-3.44em; }
+				#box3 .box { position:relative; }
+				#processing { position:absolute; top:5em; left:7em; display:none; text-align:center; margin:0; padding:0; }
+				
+		#main_div #extra_content { margin-top:-.7em; text-align:center; }	
+		#main_div #extra_content .content_div { 
+			width:409px;
+			height:auto;
+			background-color:#FFF;
+			line-height:1;
+			position:relative;
+			border-left:0.06em solid #6d96a0; 
+		}	
+			#main_div #extra_content .content_div img { margin-bottom:.3em; } 
+			#main_div #extra_content .top_white-border p { text-align:left; }
+			#main_div #extra_content p { text-align:left; }	
+			#main_div #extra_content .top_white-border { cursor:default; }
+			#main_div #extra_content .top_white-border p { padding:0.3em 0 0 0.68em; }
+			#main_div #extra_content .btm_white-border { margin-bottom:1em; }
+		
+		#main_div.page { width:auto; overflow:hidden }
+		#main_div.page .page_content .content_div { height:auto }	
+			#main_div.page .page_content .top_white-border { cursor:default; width:687px; background:url(/~donavo5/images/cart_top-border.png) top left no-repeat; }
+			#main_div.page .page_content .btm_white-border { width:49em; background:url(/~donavo5/images/cart_border-btm.png) top left no-repeat; }
+			#main_div.page .page_content .content_div { text-align:left; width:57.25em; padding:0 3em 3em 3em; }
+				#main_div.page .page_content .content_div p.body_text { line-height:1.7 }
+		
+		#page_btm #box1 { float:left; width:265px; margin:-1.1em 0 0 .7em }	
+			#page_btm #box1 .box { width:265px }
+			#page_btm .top_round-border { width:265px; background:url(/~donavo5/images/black_round-border-short.png) top left no-repeat }
+			#page_btm .btm_round-border { width:265px; background:url(/~donavo5/images/btm_black-border-short.png) top left no-repeat }
+		#page_btm #extra_content { float:left; margin:-1.1em 0 0 0 }
+
+#donavons_banner { text-align:center; float:left }
+#donavons_banner object { display:block; margin:10px 0 0 -15px }
+
+#content1 .content_div h2, #about_content .content_div h2, #contact_content .content_div h2 { 
+	color:blue;
+	font:normal small-caps 24px "Century Gothic", Verdana, sans-serif
+}
+
+#footer {
+	height:3.25em;
+	margin-top:25px;
+	color:#FFF;
+	text-align:center;
+	overflow:hidden;
+	background:url(/~donavo5/images/footer-bg.png) repeat-x;
+}
+
+	#footer div { margin:0.75em 0em 0 1em; width:31%; float:left; }
+	#footer a:link, #footer a:visited { text-decoration:none; color:#258DAF; } 
+	#footer a:hover, #footer a:active { text-decoration:underline; color:#28CC8E; } 
+	#footer a.nada:link, #footer a.nada:visited, #footer a.hidden:link, #footer a.hidden:visited { text-decoration:none; color:#FFF; cursor:default; }
+	#footer a.nada:hover, #footer a.nada:active, #footer a.hidden:hover, #footer a.hidden:active { text-decoration:none; color:#FFF; }
+	
+	#footer_nav { text-align:center; margin:0.75em 5em 0 7em; float:left; }
+	#footer_nav ul { list-style:none; }
+	#footer_nav ul li { display:inline; }
+	#footer_nav a:link, #footer_nav a:visited { color:#FFF; }
+	#footer_nav a:hover, #footer_nav a:active { color:#258DAF; }
+	#footer_nav a.nada:link, #footer_nav a.nada:visited { text-decoration:none; color:#FFF; }
+	#footer_nav a.nada:hover, #footer_nav a.nada:active { text-decoration:none; color:#FFF; }
+	
+/* Content Classes */
+.center_box_item { margin:0 0 0.63em 1.88em; }
+
+/* Utility Classes */
+.floatLeft { float:left; }
+.floatRight { float:right; }
+.clear { clear:both; font-size:1px; }
+.center { text-align:center; }
+.IEclear { display:none; }
+.red { font-weight:bold; color:red }
+#tooltip {
+	position:absolute;
+	background:url(/~donavo5/images/transparent.png) repeat;
+	padding:2px 5px;
+	z-index:10;
+	color:#fff;
+	text-align:left;
+	font:bold 14px "Century Gothic", sans-serif;
+	display:none;
+	-moz-border-radius-topleft: 15px;
+	-moz-border-radius-bottomright: 15px;
+	-webkit-border-top-left-radius: 15px;
+	-webkit-border-bottom-right-radius: 15px;
+	border:2px solid #52a8c4;
+}
+span.multiplier { color:#52a8c4; font:bold 16px "Century Gothic", sans-serif; }
+
+/************************************
+	MODAL LOGIN WINDOW: facebox
+************************************/
+
+/* custom styles for the elements within */
+#login_modal_container { color:#fff; width:60%; margin:0 auto; }
+#login_modal_container input { margin:1em; }
+#login_modal_container label { display:block; font:bold 1em Verdana, Arial, Helvetica, sans-serif; }
+
+/* packaged styles for the modal box */
+#facebox .b {
+  background:url(/~donavo5/images/facebox/b.png);
+}
+
+#facebox .tl {
+  background:url(/~donavo5/images/facebox/tl.png);
+}
+
+#facebox .tr {
+  background:url(/~donavo5/images/facebox/tr.png);
+}
+
+#facebox .bl {
+  background:url(/~donavo5/images/facebox/bl.png);
+}
+
+#facebox .br {
+  background:url(/~donavo5/images/facebox/br.png);
+}
+
+#facebox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: left;
+}
+
+#facebox h1 { height:1.7em; font-size:1.3em; font-weight:bold; border-bottom:.5em solid #fff; margin:0 0 .7em 0 }
+
+#facebox .popup {
+  position: relative;
+}
+
+#facebox table {
+  border-collapse: collapse;
+}
+
+#facebox td {
+  border-bottom: 0;
+  padding: 0;
+}
+
+#facebox .body {
+  padding: 10px;
+  background:url(/~donavo5/images/transparent2.png);
+  width: 370px;
+}
+
+#facebox .loading {
+  text-align: center;
+}
+
+#facebox .image {
+  text-align: center;
+}
+
+#facebox img {
+  border: 0;
+  margin: 0;
+}
+
+#facebox .footer {
+  border-top: 1px solid #DDDDDD;
+  padding-top: 5px;
+  margin-top: 10px;
+  text-align: right;
+}
+
+#facebox .tl, #facebox .tr, #facebox .bl, #facebox .br {
+  height: 10px;
+  width: 10px;
+  overflow: hidden;
+  padding: 0;
+}
+
+#facebox_overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height:100%;
+  width:100%;
+}
+
+.facebox_hide {
+  z-index:-100;
+}
+
+.facebox_overlayBG {
+  background-color: #000;
+  z-index: 99;
+}
+
+* html #facebox_overlay { /* ie6 hack */
+  position: absolute;
+}

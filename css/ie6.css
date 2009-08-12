@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* IE fixes */
+
+#header { width:70em; padding:0.99em 0 1.25em 0 }
+
+#content { width:62.5em; margin:0 auto; text-align:left }
+#main_div #extra_content .top_white-border p { padding:.2em 0 0 .38em; }
+
+#main_div { position:relative; z-index:101 }
+
+#nav_div { width:2.50em; margin:0.63em -0.63em 0 -2.31em; float:left; position:relative; z-index:100 }
+	#nav_div div.fade { padding-bottom:0.63em; }
+	#nav_div div.fade div { display:none; margin-top:-9.79em;}
+
+#side_div .top_round-border { width:24.46em; height:auto; margin:0; }
+
+div.content_div div.product_listing { 
+	width:18.8em;
+	margin:0 .3em 1em .4em;
+}
+
+#shop_header div.buy_link { top:3.5em; z-index:300 }
+div.content_div div.buy_link.bottom { position:relative; float:none; margin:-2em 0em 2em 0em; width:10em }
+
+#shop_header #view_cart_div { width:5em; margin:-2em .2em 0 0; float:right; position:relative }	
+#shop_header #view_cart_div a { position:absolute; top:0; z-index:300 }
